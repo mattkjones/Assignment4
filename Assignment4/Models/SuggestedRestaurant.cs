@@ -14,7 +14,7 @@ namespace Assignment4.Models
         [Required]
         public string RestaurantName { get; set; }
         public string FavoriteDish { get; set; }
-        [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage ="Invalid Phone Number")]
+        [RegularExpression(@"^\d{3}-\d{3}-\d{4}$", ErrorMessage ="Entered number format is not valid (###-###-####)")]
         public string Phone { get; set; }
     }
 }
