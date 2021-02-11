@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Top 5 Restaurants in the Provo Area";
+}
+<!--Matt Jones Section 2-->
+<!--This assigment was designed to give us more experience generating lists as well as working with Bootstrap-->
+
+<!--Enable iteration-->
+@model IEnumerable<string>
+
+<!--Nice picture of a restaurant-->
+<img src="~/img/restaurant.jpg" />
+
+<br /><br /><br />
+
+<!--Pull in the array of pre-generated top restaurants-->
+<div>
+    <ul>
+        @foreach (string i in Model)
+        {
+            <li>@i</li>
+        }
+    </ul>
+</div>
+
+<br />
+
+<!--Describe a little more about what is going on-->
+<div>
+    <p>These are the top 5 restaurants in the Provo area according to food critic Matt Jones. If you feel like other restaurants are better than the ones listed here, feel free 
+    to check out our suggestions page and submit a restaurant by using the navigation menu above. You can also view a list of the suggested restaurants made by other visitors of the site.</p>
+</div>

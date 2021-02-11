@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Top Provo Area Restaurants</title>
+    <!--Generate an image on the title bar-->
+    <link rel="shortcut icon" href="~/favicon.ico" />
+    <!--Bring in Bootstrap and the CSS style sheet-->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <!--Set up a navigation bar using bootstrap elements-->
+    <header class="text-center">
+        <h1>@ViewData["Title"]</h1>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index">Top 5 Restaurants</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Suggestions">Suggest a Restaurant</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="SuggestionsList">List of Suggestions</a></li>
+        </ul>
+    </header>
+    <!--Render the body-->
+    @RenderBody()
+    <!--Footer-->
+    <footer>Matt Jones Copyright, 2021</footer>
+</body>
+</html>
